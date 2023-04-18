@@ -9,7 +9,7 @@ public class enemy_yarasa : MonoBehaviour, IDamageable
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
+        //bebe
         if (collision.gameObject.CompareTag("Gun"))
         {
             Debug.Log("Dokunur");
