@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Zemin
+  - mermi
+  - Gun
+  - enemy
+  - EnemyBullet
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - Zemin
+  - "bah\xE7e"
+  - Mermi
+  - Player
+  - enemy
+  - EnemyBullet
+  - gold
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Zemin
+    uniqueID: 3220966405
+    locked: 0
+  - name: silah
+    uniqueID: 843584697
+    locked: 0
+  - name: enemy
+    uniqueID: 3335795251
+    locked: 0
+  - name: Player
+    uniqueID: 3558757711
+    locked: 0
+  - name: "bah\xE7e"
+    uniqueID: 2795547829
+    locked: 0
+  - name: "MERM\u0130"
+    uniqueID: 2677517967
+    locked: 0
+  - name: Kalp
+    uniqueID: 222055225
+    locked: 0
