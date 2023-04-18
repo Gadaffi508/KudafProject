@@ -120,8 +120,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8979c17a67098034fa79fc1842b5530f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 5118841444804221391, guid: eabed8a8bef0f084eb3b61b308666f25, type: 3}
-  moveSpeed: 2
+  effect: {fileID: 0}
+  health: 100
+  _goldd: {fileID: 1293704197866258201, guid: 8104bb2094aa4c347be4d9fec5de28e2, type: 3}
 --- !u!50 &9042281352250450676
 Rigidbody2D:
   serializedVersion: 4
