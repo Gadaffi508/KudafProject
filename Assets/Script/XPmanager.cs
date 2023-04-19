@@ -1,4 +1,3 @@
-using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +15,6 @@ public class XPmanager : MonoBehaviour
     public Image exParImage;
     public Animator anim;
     public GameObject upgradePanel;
-    public GameObject PanelBG;
     UpgradeSystem upgradeSystem;
     public bool zamanbaslat = true;
 
@@ -93,18 +91,11 @@ public class XPmanager : MonoBehaviour
             yield break;
             anim.SetBool("sendbool",false);
         }
-
-        PanelBG.transform.DOMoveY(540, 1);
         upgradePanel.SetActive(true);
 
         zamanbaslat = false;
-        StartCoroutine(StopAllTime());
-        
-    }
-    IEnumerator StopAllTime()
-    {
-        yield return new WaitForSeconds(1);
         Time.timeScale = 0;
+
     }
 
 

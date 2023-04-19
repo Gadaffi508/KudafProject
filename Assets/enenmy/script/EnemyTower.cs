@@ -28,6 +28,7 @@ public class EnemyTower : MonoBehaviour, IDamageable
 
     public float Force;
 
+    GameManager manager;
 
     private void Shoot()
     {
@@ -51,6 +52,8 @@ public class EnemyTower : MonoBehaviour, IDamageable
     }
     void Die()
     {
+        manager = GameObject.FindGameObjectWithTag("GamaManager").gameObject.GetComponent<GameManager>();
+        manager.killenemy += 1;
         Destroy(gameObject);
     }
 

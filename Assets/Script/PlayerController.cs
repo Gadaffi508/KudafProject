@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     public Animator anim;
     Vector2 movement;
+    public float time;
 
 
     private void Awake()
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("Vertical", movement.y);
         anim.SetFloat("Speed", movement.sqrMagnitude);
         directionAttach();
+        time = Time.time;
     }
     private void FixedUpdate()
     {

@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -51,13 +48,8 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         anim.SetTrigger("died");
-        Destroy(gameObject, 1.5f);
         GetComponent<PlayerController>().enabled = false;
-    }
-
-    public void RestartLevel()
-    {
-        SceneManager.LoadScene("StartScene");
+        StartCoroutine(Timezero());
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -71,5 +63,10 @@ public class PlayerHealth : MonoBehaviour
     public void canAttýrma()
     {
         health += StatSystem.instance.GetStatValue(StatType.PlayerHealth);
+    }
+    IEnumerator Timezero()
+    {
+        yield return new WaitForSeconds(0.7f);
+        Time.timeScale = 0;
     }
 }
