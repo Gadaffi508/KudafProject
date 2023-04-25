@@ -12,11 +12,11 @@ public class EnemyFaceControl : MonoBehaviour
     {
         if (transform.position.x > target.position.x)
         {
-            transform.localScale = new Vector3(0.4f,0.4f,0);
+            transform.localScale = new Vector3(1f,1f,0);
         }
         else
         {
-            transform.localScale = new Vector3(-0.4f, 0.4f,0);
+            transform.localScale = new Vector3(-1f, 1f,0);
         }
     }
 }
