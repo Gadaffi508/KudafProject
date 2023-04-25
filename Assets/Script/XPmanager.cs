@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,13 +37,6 @@ public class XPmanager : MonoBehaviour
 
             return (currentLevel*currentLevel+currentLevel)*5;     
         
-    }
-
-    private void Update()
-    {
-        //Test
-        if (Input.GetKeyDown(KeyCode.Space))
-            SetExperience(50);
     }
 
     public void SetExperience(float exp)
@@ -99,13 +91,11 @@ public class XPmanager : MonoBehaviour
             yield break;
             anim.SetBool("sendbool",false);
         }
-            
-
         upgradePanel.SetActive(true);
 
         zamanbaslat = false;
         Time.timeScale = 0;
-        
+
     }
 
 

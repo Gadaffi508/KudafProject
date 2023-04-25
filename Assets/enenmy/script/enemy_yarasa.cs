@@ -6,6 +6,7 @@ public class enemy_yarasa : MonoBehaviour, IDamageable
     public GameObject effect;
     public float health = 100;
     public GameObject _goldd;
+    GameManager manager;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -38,6 +39,8 @@ public class enemy_yarasa : MonoBehaviour, IDamageable
     }
     void Die()
     {
+        manager = GameObject.FindGameObjectWithTag("GamaManager").gameObject.GetComponent<GameManager>();
+        manager.killenemy += 1;
         Destroy(gameObject);
     }
     
