@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BananaEnemy : MonoBehaviour
+public class BananaEnemy : MonoBehaviour, IDamageable
 {
     public float Radius;
     public Transform target,firePoint;
@@ -13,7 +13,8 @@ public class BananaEnemy : MonoBehaviour
     private float nextTimeFireRate = 0;
     public GameObject bullet;
     private Animator animator;
-
+    public float health = 100;
+    public GameObject _goldd;
     private AIPath path;
     private void OnDrawGizmos()
     {
@@ -72,5 +73,15 @@ public class BananaEnemy : MonoBehaviour
     {
        Instantiate(bullet, firePoint.position, Quaternion.identity);
     }
-   
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            //Die();
+            _goldd = Instantiate(_goldd, transform.position, Quaternion.identity);
+        }
+    }
+
 }

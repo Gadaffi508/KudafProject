@@ -14,6 +14,7 @@ public class BananaBullet : MonoBehaviour
     public LayerMask layerMask;
     bool bom;
 
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
@@ -40,6 +41,8 @@ public class BananaBullet : MonoBehaviour
                 {
                     ray.GetComponent<Rigidbody2D>().AddForce(Direction * explodeForce);
                     Debug.Log("igerideeddeded");
+                    PlayerHealth player = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<PlayerHealth>();
+                    player.TakeDamage(15);
                     Destroy(this.gameObject,0.01f);
                 }
              
@@ -55,4 +58,14 @@ public class BananaBullet : MonoBehaviour
         bom = true;
 
     }
+    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerHealth player = GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<PlayerHealth>();
+            player.TakeDamage(10);
+        }
+    }
+   
 }
