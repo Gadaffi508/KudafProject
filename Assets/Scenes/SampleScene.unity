@@ -207,7 +207,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1077652205}
         m_TargetAssemblyTypeName: UpgradeSystem, Assembly-CSharp
         m_MethodName: CloseCanvas
         m_Mode: 1
@@ -269,8 +269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79d119d7c332ff4a9b24521f8e3936e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponManager: {fileID: 0}
-  upgradeSystem: {fileID: 0}
+  weaponManager: {fileID: 1077652207}
+  upgradeSystem: {fileID: 1077652205}
 --- !u!1 &256817493
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,7 +355,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1077652205}
         m_TargetAssemblyTypeName: UpgradeSystem, Assembly-CSharp
         m_MethodName: CloseCanvas
         m_Mode: 1
@@ -417,8 +417,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79d119d7c332ff4a9b24521f8e3936e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponManager: {fileID: 0}
-  upgradeSystem: {fileID: 0}
+  weaponManager: {fileID: 1077652207}
+  upgradeSystem: {fileID: 1077652205}
 --- !u!1 &374739476
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,7 +721,7 @@ PrefabInstance:
     - target: {fileID: 9170216512621231594, guid: ffbf5d57b184e064db3bc7ecb6bb60fd, type: 3}
       propertyPath: anim
       value: 
-      objectReference: {fileID: 1077652204}
+      objectReference: {fileID: 1905718085}
     - target: {fileID: 9170216512621231594, guid: ffbf5d57b184e064db3bc7ecb6bb60fd, type: 3}
       propertyPath: lvlText
       value: 
@@ -733,7 +733,11 @@ PrefabInstance:
     - target: {fileID: 9170216512621231594, guid: ffbf5d57b184e064db3bc7ecb6bb60fd, type: 3}
       propertyPath: upgradePanel
       value: 
-      objectReference: {fileID: 1625683492}
+      objectReference: {fileID: 626209554}
+    - target: {fileID: 9170216512621231595, guid: ffbf5d57b184e064db3bc7ecb6bb60fd, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 9170216512621231595, guid: ffbf5d57b184e064db3bc7ecb6bb60fd, type: 3}
       propertyPath: healt.Array.data[0]
       value: 
@@ -1070,7 +1074,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &626209555
 Transform:
   m_ObjectHideFlags: 0
@@ -1220,11 +1224,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9170216512621231584, guid: ffbf5d57b184e064db3bc7ecb6bb60fd, type: 3}
   m_PrefabInstance: {fileID: 441449215}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1077652204 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9170216512621231588, guid: ffbf5d57b184e064db3bc7ecb6bb60fd, type: 3}
+--- !u!114 &1077652205 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9170216512621231598, guid: ffbf5d57b184e064db3bc7ecb6bb60fd, type: 3}
   m_PrefabInstance: {fileID: 441449215}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a65c65ffd2ae946adda0aa36792660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1077652207 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9170216512621231592, guid: ffbf5d57b184e064db3bc7ecb6bb60fd, type: 3}
+  m_PrefabInstance: {fileID: 441449215}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2acc24f81a2d6e14387441447322a858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1165851999
 GameObject:
   m_ObjectHideFlags: 0
@@ -12947,7 +12968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1625683493
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13213,7 +13234,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1077652205}
         m_TargetAssemblyTypeName: UpgradeSystem, Assembly-CSharp
         m_MethodName: CloseCanvas
         m_Mode: 1
@@ -13275,8 +13296,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79d119d7c332ff4a9b24521f8e3936e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponManager: {fileID: 0}
-  upgradeSystem: {fileID: 0}
+  weaponManager: {fileID: 1077652207}
+  upgradeSystem: {fileID: 1077652205}
 --- !u!1 &1803501563
 GameObject:
   m_ObjectHideFlags: 0
@@ -14217,7 +14238,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1077652205}
         m_TargetAssemblyTypeName: UpgradeSystem, Assembly-CSharp
         m_MethodName: CloseCanvas
         m_Mode: 1
@@ -14279,8 +14300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79d119d7c332ff4a9b24521f8e3936e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponManager: {fileID: 0}
-  upgradeSystem: {fileID: 0}
+  weaponManager: {fileID: 1077652207}
+  upgradeSystem: {fileID: 1077652205}
 --- !u!1 &2129378244
 GameObject:
   m_ObjectHideFlags: 0
