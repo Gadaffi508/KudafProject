@@ -522,7 +522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d5cf83755b1be4797ed02ca524a8b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponData: {fileID: 11400000, guid: 1754f2b46e5bb404789ce6a2ed1268c4, type: 2}
+  WeaponData: {fileID: 0}
   pivotPoint: {fileID: 1626289571}
   weaponUpgrades:
   - {fileID: 11400000, guid: ffec033432d415748a507dca55c51222, type: 2}
@@ -916,7 +916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c4fc2b6129f4e84aab4f3a7b135c962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponData: {fileID: 11400000, guid: 33631d2b8919b2c42aaab9415aa30ba9, type: 2}
+  WeaponData: {fileID: 0}
   pivotPoint: {fileID: 1626289571}
   weaponUpgrades:
   - {fileID: 11400000, guid: d10d0d012b89e644aad26b0976768f37, type: 2}
@@ -1180,7 +1180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 458037746}
-  - component: {fileID: 458037745}
+  - component: {fileID: 458037747}
   m_Layer: 0
   m_Name: GamaManager
   m_TagString: GamaManager
@@ -1188,22 +1188,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &458037745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458037744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac9bb4028eba9934da8a12728c413385, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScoreGUI: {fileID: 2129378244}
-  time: {fileID: 420253380}
-  killenemy: 0
-  kilenemy: {fileID: 1888090738}
 --- !u!4 &458037746
 Transform:
   m_ObjectHideFlags: 0
@@ -1219,6 +1203,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &458037747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458037744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac9bb4028eba9934da8a12728c413385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreGUI: {fileID: 1275435973}
+  time: {fileID: 420253380}
+  killenemy: 0
+  kilenemy: {fileID: 1888090738}
 --- !u!1 &468240162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,7 +1982,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 458037745}
+      - m_Target: {fileID: 458037747}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
@@ -2114,7 +2114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1275435974
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3988,7 +3988,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 458037745}
+      - m_Target: {fileID: 458037747}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: Replay
         m_Mode: 1
@@ -4204,7 +4204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2129378245
 MonoBehaviour:
   m_ObjectHideFlags: 0

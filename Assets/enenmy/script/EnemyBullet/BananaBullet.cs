@@ -22,7 +22,7 @@ public class BananaBullet : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.AddForce(BananaEnemy.direction * Force);
+        //rb.AddForce(BananaEnemy.direction * Force);
         random = Random.Range(0.5f,1.2f);
         Invoke("BulletStop",random);
 

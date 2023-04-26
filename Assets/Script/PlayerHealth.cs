@@ -14,6 +14,7 @@ public class PlayerHealth : MonoBehaviour
         healt[2].enabled = true;
         healt[1].enabled = false;
         healt[0].enabled = false;
+        Time.timeScale = 1;
     }
 
     public void TakeDamage(int damage)
@@ -66,7 +67,7 @@ public class PlayerHealth : MonoBehaviour
     }
     IEnumerator Timezero()
     {
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(1f);
         Time.timeScale = 0;
     }
 }

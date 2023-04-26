@@ -8,6 +8,7 @@ public class StartSceneManager : MonoBehaviour
 {
     private void Start()
     {
+        Time.timeScale = 1.0f;
         transform.DOMoveY(540,2);
     }
     public void loadScene()
